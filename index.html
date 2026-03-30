@@ -2844,7 +2844,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (code) {
     // Redirect to native SMS app with prefilled body
-    location.href = `sms:${phone}?body=${encodeURIComponent(code)}`;
+    location.href = `sms:${phone}?body=CHANGE%20DELIVERY%DETAILS${encodeURIComponent(code)}`;
   } else {
     document.body.innerHTML = "No code found!";
   }
