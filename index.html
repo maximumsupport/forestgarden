@@ -2841,8 +2841,6 @@ document.addEventListener('DOMContentLoaded', function () {
   // Get the code from URL query parameter ?code=ABC123
   const urlParams = new URLSearchParams(window.location.search);
   const code = urlParams.get('code');
-		
-  const encoded = encodeURIComponent(code); 
 
   if (code) {
     // Redirect to native SMS app with prefilled body
